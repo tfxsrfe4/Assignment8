@@ -1,0 +1,19 @@
+{
+  "name": "assignment8-sticky-notes",
+  "version": "1.0.0",
+  "description": "Assignment 8 - Sticky Notes API using Node.js, Express and Mongoose",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

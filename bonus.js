@@ -1,0 +1,20 @@
+// LeetCode: Longest Common Prefix
+// Returns the longest prefix shared by every string in the array.
+function longestCommonPrefix(strs) {
+  if (!strs || strs.length === 0) return "";
+
+  let prefix = strs[0];
+
+  for (let i = 1; i < strs.length; i++) {
+    while (!strs[i].startsWith(prefix)) {
+      prefix = prefix.slice(0, -1);
+      if (prefix === "") return "";
+    }
+  }
+
+  return prefix;
+}
+
+// Example:
+console.log(longestCommonPrefix(["flower", "flow", "flight"])); // "fl"
+module.exports = longestCommonPrefix;
